@@ -195,17 +195,17 @@
                     <div>
                         <label for="name">Budget:</label>
                         <select class="input">
-                            <option value="<10k EUR"><10k EUR</option>
-                            <option value="10-100k EUR">10-100k EUR</option>
-                            <option value=">100k EUR">>100k EUR</option>
+                            <option>&lt;10k EUR</option>
+                            <option>10-100k EUR</option>
+                            <option>&gt;100k EUR</option>
                         </select>
                     </div>
-                     <div>
-                        <label for="name">Service:</label>
-                        <select class="input">
-                            <option value="design">Design</option>
-                            <option value="development">Development</option>
-                        </select>
+                    <div>
+                        <fieldset>
+                            <legend class="input">Required service:</legend>
+                            <label><input type="radio" name="service" value="design">Design</label>
+                            <label><input type="radio" name="service" value="development">Development</label>
+                        </fieldset>
                     </div>
                     <div class="gdpr-container">
                         <p>GDPR</p>

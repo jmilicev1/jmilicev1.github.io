@@ -5,21 +5,49 @@
         <style>
             body {
                 background-color: aquamarine;
-                color: blue;
+                color: black;
                 font-family: cursive;
             }
-        </style> <!--color boja teksta, background-color je pozadinska boja, font-family font (najbolji monospace )-->
+            a {
+                color: yellow;
+            }
+            section {
+                background-color: blue;
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-top: 16px;
+                padding-bottom: 16px;
+                margin-top: 16px;
+                margin-bottom: 16px;
+            }
+            main {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 768px;
+            }
+        </style> <!--color boja teksta, background-color je pozadinska boja, font-family font (najbolji monospace )
+        max-width da nam suzi preglednik izgled naših sekcija. padding je bitno stavljati na parni broj zbog piksela-->
     </head>
     <body>
-        <h1>About me</h1>
-        <p>My name is <strong> Jurica Miličević</strong> and I am a <strong>frontend developer</strong> from Zagreb, Croatia.</p>
-        <p>My skills include</p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li><strong>React</strong></li>
-            <li>Git</li>
-        </ul>
+        <main>
+            <section>
+                <h1>About me</h1>
+                <p>My name is <strong> Jurica Miličević</strong> and I am a <strong>frontend developer</strong> from Zagreb, Croatia.</p>
+                <p>My skills include</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li><strong>React</strong></li>
+                    <li>Git</li>
+                </ul>
+            </section>
+            <section>
+                <h1>Contac me</h1>
+                <a href="mailto:jurica@gmail.com">jurica@gmail.com</a>
+                <a href="tel:+1234567890">+1234567890</a>ž
+                <a href="https://www.linkedin.com">LinkedIn Stranica</a>
+            </section>
+        </main>
     </body>
 </html>

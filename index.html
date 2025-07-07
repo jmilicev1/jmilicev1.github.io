@@ -47,6 +47,37 @@
             ul {
                 list-style-type: none;
             }
+            .input {
+                width: 100%;
+                border-radius: 0px;
+                border: none;
+                background-color: aquamarine;
+                color: black;
+            }
+            .opis {
+                width: 100%;
+                border-radius: 0px;
+                border: none;
+                background-color: aquamarine;
+                color: black;
+            }
+            .gdpr-container p {
+                color: black;
+                font-weight: bold;
+            }
+            .checkbox {
+                accent-color: aquamarine;
+                width: 18px;
+                height: 18px;
+            }
+            button {
+                background-color: aquamarine;
+                color: black;              
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }       
         </style> <!--color boja teksta, background-color je pozadinska boja, font-family font (najbolji monospace )
         max-width da nam suzi preglednik izgled naših sekcija. padding je bitno stavljati na parni broj zbog piksela
                     main, footer {
@@ -136,6 +167,56 @@
                     <li>Web shop</li>
                     <li>Search</li>
                 </ul>
+            </section>
+            <section>
+                <h2>Request a quote for your project</h2>
+                <form>
+                    <div>
+                        <label for="name">Full name:</label>
+                        <input class="input" type="text" id="name" name="full_name">
+                    </div>
+                    <div>
+                        <label for="name">Your title:</label>
+                        <select class="input">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                            <option value="sir">Sir</option>
+                            <option value="madam">Madam</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input class="opis" type="email" name="email" required>
+                    </div>
+                    <div>
+                        <label>Project description:</label>
+                        <br><textarea class="opis" rows="10" cols="10" name="Message" required></textarea>
+                    </div>
+                    <div>
+                        <label for="name">Budget:</label>
+                        <select class="input">
+                            <option value="<10k EUR"><10k EUR</option>
+                            <option value="10-100k EUR">10-100k EUR</option>
+                            <option value=">100k EUR">>100k EUR</option>
+                        </select>
+                    </div>
+                     <div>
+                        <label for="name">Service:</label>
+                        <select class="input">
+                            <option value="design">Design</option>
+                            <option value="development">Development</option>
+                        </select>
+                    </div>
+                    <div class="gdpr-container">
+                        <p>GDPR</p>
+                        <label>
+                            <input class="checkbox" type="checkbox" value="true" name="vf">
+                        </label>
+                    </div>
+                    <div>
+                        <button type="submit">Send request</button>
+                    </div>
+                </form>
             </section>
         </main>
         <footer class="wrapper">
